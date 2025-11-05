@@ -23,3 +23,26 @@
 # (학교 서버에서)
 pip install -r requirements.txt
 python AssistantK.py
+```
+
+**2. AI Models (Local PC)**
+
+```bash
+# (로컬 PC에서)
+# 1. Ollama 실행 (11434 포트)
+ollama serve
+
+# 2. ComfyUI 실행 (8188 포트)
+(ComfyUI 실행 명령어)
+
+# 3. PostgreSQL 실행 (5432 포트)
+(PostgreSQL 서비스 실행 또는 Docker 실행)
+```
+
+**3. 네트워크 설정**
+
+```bash
+# 1. 로컬 PC의 방화벽에서 TCP 11434, 8188, 5432 포트의 인바운드 규칙을 허용해야 합니다.
+
+# 2. AssistantK.py 코드의 DB_HOST, OLLAMA_URL, COMFY_URL을 로컬 PC의 IP 주소로 설정해야 합니다.
+```
